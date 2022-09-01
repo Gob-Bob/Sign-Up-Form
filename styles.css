@@ -1,30 +1,45 @@
 /*Tempoarary borders to show where each element spans*/
 * {
-    border: 1px solid black;
+    border: 1px solid gray;
+}
+/*Custom font*/
+@font-face {
+    font-family: odin-custom;
+    src: url(Norse-Bold.otf);
+} html,body {
+    margin: 0;
+    height: 100%;
 }
 
 /*Left side of screen*/
 
 body {
     display: flex;
-}
-/*Left section wrapper
-    Disable flex? Or flex column centered
-    Leaves background
-*/
-.left.wrapper {
+} .left {
     background-image: url("leaves.jpg");
+    background-size: cover;
+    background-position: -100px;
     color: white;
+    height: 1000px;
+    width: 600px;
+} section.left div:first-child {
+    font-family: odin-custom,'Courier New', Courier;
+    font-size: 100px;
+} .imgODIN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+} img {
+    width: 125px;
 }
-/*ODIN element
-    Transparent background
-    Use psuedo element to insert logo in front?
-    Use customized font
-    Bold
-*/
 /*Photo credits span
     Underlined
 */
+section.left>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
 
 /*Right side of screen*/
 
