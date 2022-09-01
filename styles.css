@@ -1,0 +1,80 @@
+/*Left side of screen*/
+
+/*Body 
+    Tempoarary borders to show where each element spans
+    Flex display row
+*/
+/*Left section wrapper
+    Disable flex? Or flex column centered
+    Leaves background
+*/
+/*ODIN element
+    Transparent background
+    Use psuedo element to insert logo in front?
+    Use customized font
+    Colored white
+    Bold
+*/
+/*Photo credits
+    White text
+*/
+/*Photo credits span
+    Underlined
+*/
+
+/*Right side of screen*/
+
+/*Section 1*/
+
+/*Custom property
+    gray background for section 1 and 3
+*/
+
+/*Section 1 wrappper
+    custom property background
+*/
+/*Message 1 wrapper INCLUDING section 2's title text
+    Correct font
+    Bold
+    Disable flex? Or flex column left
+*/
+/*Message 1 3rd item
+    Padding or margin on top and bottom
+*/
+
+/*Section 2*/
+
+/*Section 2 wrapper
+    White background with shadow
+*/
+/*Labels
+    Probably same font as Message 1 wrapper
+    Small size
+*/
+/*Inputs
+    Gray and thin border
+    Rounded edges
+*/
+/*Inputs (psudo class for being selected)
+    Blue and thin border
+*/
+/*Password inputs (use psuedo class; valid or unvalid)
+    Red and thin border
+*/
+/*Password input 1
+    Psudo element that adds "passwords do not match"
+*/
+
+/*Section 3*/
+
+/*Account button
+    Rounded edge
+    Green
+    White text
+*/
+/*Already have account text
+    Same font family
+*/
+/*Already have account text psudo class target span
+    Green text
+*/
