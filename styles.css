@@ -1,22 +1,26 @@
+/*Tempoarary borders to show where each element spans*/
+* {
+    border: 1px solid black;
+}
+
 /*Left side of screen*/
 
-/*Body 
-    Tempoarary borders to show where each element spans
-    Flex display row
-*/
+body {
+    display: flex;
+}
 /*Left section wrapper
     Disable flex? Or flex column centered
     Leaves background
 */
+.left.wrapper {
+    background-image: url("leaves.jpg");
+    color: white;
+}
 /*ODIN element
     Transparent background
     Use psuedo element to insert logo in front?
     Use customized font
-    Colored white
     Bold
-*/
-/*Photo credits
-    White text
 */
 /*Photo credits span
     Underlined
