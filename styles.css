@@ -1,7 +1,8 @@
 /*Tempoarary borders to show where each element spans*/
-* {
+/* {
     border: 1px dotted gray;
 }
+*/
 /*Custom font*/
 @font-face {
     font-family: odin-custom;
@@ -18,11 +19,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } .left {
     background-image: url("leaves.jpg");
-    background-size: cover;
+    background-size: 150%;
     background-position: -100px;
     color: white;
-    height: 1000px;
-    width: 650px;
+    height: 100vh;
+    width: 75vh;
     position: relative;
 } section.left div:first-child {
     font-family: odin-custom;
@@ -62,28 +63,57 @@ section.left>div:nth-child(2) {
 section.right>section.wrapper>div:nth-child(2) {
     padding-left: var(--sectionOneLeftPadding);
     padding-right: var(--sectionOneRightPadding);
-} section.right>section.wrapper>div:first-child {
+} section.right>section.wrapper:first-child>div:first-child {
     padding-left: var(--sectionOneLeftPadding);
     padding-right: var(--sectionOneRightPadding);
     padding-top: 130px;
     padding-bottom: 40px;
-} section.right>section.wrapper>div:nth-child(2) {
+} section.right>section.wrapper:first-child>div:nth-child(2) {
     padding-bottom: 60px;
 } section.right>section.wrapper:first-child,
-section.right>section.wrapper:nth-child(2)>div {
+section.right>section.wrapper:nth-child(2)>div:first-child {
     font-size: 24px;
     font-weight: 600;
 }
 
-/*Message 1 3rd item
-    Padding or margin on top and bottom
-*/
-
 /*Section 2*/
 
+section.right>section.wrapper:nth-child(2)>div:first-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 /*Section 2 wrapper
     White background with shadow
 */
+section.right>section:nth-child(2)>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+label, input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+label {
+   font-size: 14px;
+   font-weight: 600;
+   color: darkslategray;
+   padding: 10px 0px 0px 0px;
+}
+input {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none !important;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px lightgray;
+}
 /*Labels
     Probably same font as Message 1 wrapper
     Small size
