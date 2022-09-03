@@ -1,9 +1,3 @@
-/*Tempoarary borders to show where each element spans*/
-/* {
-    border: 1px dotted gray;
-}
-*/
-/*Custom font*/
 @font-face {
     font-family: odin-custom;
     src: url(Norse-Bold.otf);
@@ -53,7 +47,6 @@ body {
 
 /*Section 1*/
 
-/*Custom property; gray background for section 1 and 3*/
 :root {
     --rightSectionColor: rgb(240, 240, 240);
     --sectionOneLeftPadding: 50px;
@@ -79,7 +72,6 @@ section.right>section.wrapper:nth-child(2)>div:first-child {
 
 /*Section 2*/
 
-/*Let's do this!*/
 section.right>section.wrapper:nth-child(2)>div:first-child {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -130,14 +122,10 @@ button {
     margin-left: var(--sectionOneLeftPadding);
     margin-top: 35px;
     margin-bottom: 35px;
-}
-section.right>section.wrapper:last-child>div {
+} section.right>section.wrapper:last-child>div {
     font-size: 18px;
     font-weight: 550;
-}
-/*Already have account text psudo class target span
-    Green text
-*/
-section.right>section.wrapper:last-child>div>span {
+} section.right>section.wrapper:last-child>div>span {
     color: green;
+    cursor: pointer;
 }
