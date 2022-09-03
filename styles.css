@@ -39,13 +39,14 @@ body {
     top: 20%;
 } img {
     width: 125px;
-}
-section.left>div:nth-child(2) {
+} section.left>div:nth-child(2) {
     position: absolute;
     bottom: 1%;
     white-space: nowrap;
     left: 50%;
     transform: translate(-50%, -50%);
+} a, a:visited {
+    color: white;
 }
 
 /*Right side of screen*/
