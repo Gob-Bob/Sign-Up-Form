@@ -16,9 +16,10 @@ body {
     background-size: 1000px;
     background-position: -100px;
     color: white;
-    height: 950px;
+    height: 1000px;
     width: 800px;
-    position: relative;
+    position: sticky;
+    z-index: 1;
 } section.left div:first-child {
     font-family: odin-custom;
     font-size: 100px;
@@ -28,7 +29,6 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    white-space: nowrap;
     width: 100%;
     top: 20%;
 } img {
@@ -44,6 +44,10 @@ body {
 }
 
 /*Right side of screen*/
+
+.right {
+    z-index: 2;
+}
 
 /*Section 1*/
 
@@ -61,7 +65,7 @@ section.right>section.wrapper>div:nth-child(2) {
 } section.right>section.wrapper:first-child>div:first-child {
     padding-left: var(--sectionOneLeftPadding);
     padding-right: var(--sectionOneRightPadding);
-    padding-top: 130px;
+    padding-top: 140px;
     padding-bottom: 40px;
 } section.right>section.wrapper:first-child>div:nth-child(2) {
     padding-bottom: 60px;
@@ -123,7 +127,13 @@ button {
     margin-left: var(--sectionOneLeftPadding);
     margin-top: 35px;
     margin-bottom: 35px;
-} section.right>section.wrapper:last-child>div {
+    transition-duration: .5s;
+} button:hover {
+    background-color: rgb(90, 173, 90);
+    transition-duration: .5s;
+}
+
+section.right>section.wrapper:last-child>div {
     font-size: 18px;
     font-weight: 550;
 } section.right>section.wrapper:last-child>div>span {
