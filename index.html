@@ -34,35 +34,35 @@
             <!--Title-->
             <div>Let's do this!</div>
             <!--Input wrapper-->
-            <div class="inputs">
+            <form class="inputs" action="#" method="get" id="inputForm">
                 <div class="wrapper">
                     <!--First name-->
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" placeholder="Thor">
+                    <input type="text" id="first_name" placeholder="Thor" required>
                     <!--Email-->
                     <label for="user_email">EMAIL</label>
-                    <input type="email" id="user_email">
+                    <input type="email" id="user_email" required>
                     <!--Password-->
                     <label for="user_password">PASSWORD</label>
-                    <input type="password" id="user_password" name="password">
+                    <input type="password" id="user_password" name="password" required>
                 </div>
                 <div class="wrapper">
                     <!--Last name-->
                     <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" placeholder="Odinson">
+                    <input type="text" id="last_name" placeholder="Odinson" required>
                     <!--Phone number-->
                     <label for="phone_number">PHONE NUMBER</label>
                     <input type="tel" id="phone_number" name="phone_number">
                     <!--Confirm password-->
                     <label for="user_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="user_password" name="password">
+                    <input type="password" id="user_password" name="password" required>
                 </div>
-            </div>
+            </form>
         </section>
         <!--Section 3 wrapper-->
         <section class="wrapper">
             <!--Create account button-->
-            <button>Create Account</button>
+            <button type="submit" form="inputForm">Create Account</button>
             <!--Message-->
             <div>Already have an account? <span>Log in</span></div>
         </section>
