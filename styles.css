@@ -88,7 +88,7 @@ section.right>section.wrapper:nth-child(2)>div:first-child {
 } section.right>section:nth-child(2)>form {
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     padding-left: var(--sectionOneLeftPadding);
 } label, input {
     display: flex;
@@ -111,10 +111,10 @@ section.right>section.wrapper:nth-child(2)>div:first-child {
     border: 1px solid blue;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 1px lightgray;
+} #error_message {
+    color: white;
+    font-size: 14px;
 }
-/*Password input 1
-    Psudo element that adds "passwords do not match"
-*/
 
 /*Section 3*/
 

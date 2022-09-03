@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <!--Left screen wrapper-->
@@ -44,7 +45,8 @@
                     <input type="email" id="user_email" required>
                     <!--Password-->
                     <label for="user_password">PASSWORD</label>
-                    <input type="password" id="user_password" name="password" required>
+                    <input type="password" id="user_password" name="password" onkeyup="checkPwd();" required>
+                    <span id="error_message">* Passwords do not match</span>
                 </div>
                 <div class="wrapper">
                     <!--Last name-->
@@ -55,7 +57,7 @@
                     <input type="tel" id="phone_number" name="phone_number">
                     <!--Confirm password-->
                     <label for="user_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="user_password" name="password" required>
+                    <input type="password" id="confirm_password" name="password" onkeyup="checkPwd();" required>
                 </div>
             </form>
         </section>
